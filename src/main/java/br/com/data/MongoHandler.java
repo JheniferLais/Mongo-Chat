@@ -1,4 +1,4 @@
-package org.example;
+package br.com.data;
 
 import com.mongodb.client.*;
 import com.mongodb.client.model.Filters;
@@ -9,10 +9,10 @@ import com.mongodb.ErrorCategory;
 import com.mongodb.client.model.Updates;
 import org.bson.Document;
 import org.bson.types.ObjectId;
-import org.example.entities.Message;
-import org.example.entities.User;
-import org.example.utils.CryptoUtils;
-import org.example.utils.PasswordUtils;
+import br.com.entities.Message;
+import br.com.entities.User;
+import br.com.utils.CryptoUtils;
+import br.com.utils.PasswordUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,11 +22,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class MongoController {
+public class MongoHandler {
 
     private final MongoClient client;
 
-    public MongoController() {
+    public MongoHandler() {
 
         // Pega a URL do MONGO....
         Properties p = new Properties();

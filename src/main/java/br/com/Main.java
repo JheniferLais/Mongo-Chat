@@ -1,7 +1,8 @@
-package org.example;
+package br.com;
 
-import org.example.entities.Message;
-import org.example.entities.User;
+import br.com.data.MongoHandler;
+import br.com.entities.Message;
+import br.com.entities.User;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MongoController mongo = new MongoController(); // nome de variável em minúsculo
+        MongoHandler mongo = new MongoHandler(); // nome de variável em minúsculo
 
 
         // Pega a CHAVE de CRIPTO/DESCRIPTO das mensagens....

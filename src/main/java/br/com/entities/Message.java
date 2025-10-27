@@ -1,4 +1,4 @@
-package org.example.entities;
+package br.com.entities;
 
 public class Message {
     private String fromEmail;

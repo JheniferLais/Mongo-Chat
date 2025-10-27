@@ -1,4 +1,4 @@
-package org.example.entities;
+package br.com.entities;
 
 public class User {
     private final String nickname;
